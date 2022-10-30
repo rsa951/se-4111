@@ -6,7 +6,7 @@ public class Shahadsingleton {
 private static Shahadsingleton ins; 
 		
 private Shahadsingleton() {
-System.out.println("shahad aMMMMMMbdullah");
+System.out.println("shahad abdullah");
 	}
 
 public static Shahadsingleton getInstance() {
