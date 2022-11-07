@@ -6,6 +6,7 @@ public class singleton {
 		private static singleton ins; 
 		
 		private singleton() {
+			System.out.print("shahad abdullah");
 		}
 
 		public static singleton getInstance() {
