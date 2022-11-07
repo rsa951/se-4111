@@ -7,6 +7,8 @@ public class singleton {
 		
 		private singleton() {
 			System.out.print("shahad abdullah");
+			System.out.print("Ashwaq Rajeh");
+			
 		}
 
 		public static singleton getInstance() {
