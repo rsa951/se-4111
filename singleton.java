@@ -24,7 +24,7 @@ public class singleton {
 
 		/*
 		 * this function is to set an int number to shaconfig 
-		 * @param con1 value is to set a new value
+		 * @param con1 value to pass a value into the set function
 		 */
 		public void setShconfig(int con1) {
 			assert(con1 % 1 == 0)
@@ -42,7 +42,7 @@ public class singleton {
 
 		/*
 		 * this function is to set an int number to Ashconfig 
-		 * @param con2 value is to set a new value
+		 * @param con2 value to pass a value into the set function
 		 */
 		public void setAshconfig(int con2) {
 			assert(con2 % 1 == 0)
@@ -56,4 +56,20 @@ public class singleton {
 		public int getAshconfig() {
 		return Ashconfig;	
 		} 	
+		/*
+		 * this function is to set an int number to Reeconfig 
+		 * @param con3 value to pass a value into the set function
+		 */
+		public void setReeconfig(int con3) {
+			assert(con3 % 1 == 0)
+			Reeconfig=con3;
+			} 
+		
+		/*
+		 * this function is to get and return the Reeconfig value
+		 * @return Reeconfig value 
+		 */
+		public int getReeconfig() {
+		return Reeconfig;	
+		} 
 }
