@@ -5,6 +5,7 @@ public class singleton {
 		 
 		private static singleton ins; 
 		private int shaconfig; 
+		private int Ashconfig;
 		
 		private singleton() {
 			System.out.print("shahad abdullah");
@@ -36,5 +37,23 @@ public class singleton {
 		 */
 		public int getShconfig() {
 		return shaconfig;	
+		}
+		
+
+		/*
+		 * this function is to set an int number to Ashconfig 
+		 * @param con2 value is to set a new value
+		 */
+		public void setAshconfig(int con2) {
+			assert(con2 % 1 == 0)
+			Ashconfig=con1;
+			} 
+		
+		/*
+		 * this function is to get and return the Ashconfig value
+		 * @return Ashconfig value 
+		 */
+		public int getAshconfig() {
+		return Ashconfig;	
 		} 	
 }
