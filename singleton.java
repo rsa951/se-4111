@@ -57,19 +57,19 @@ public class singleton {
 		return Ashconfig;	
 		} 	
 		/*
-		 * this function is to set an int number to Reeconfig 
+		 * this function is to set an int number to Reconfig 
 		 * @param con3 value to pass a value into the set function
 		 */
-		public void setReeconfig(int con3) {
+		public void setReconfig(int con3) {
 			assert(con3 % 1 == 0)
-			Reeconfig=con3;
+			Reconfig=con3;
 			} 
 		
 		/*
-		 * this function is to get and return the Reeconfig value
-		 * @return Reeconfig value 
+		 * this function is to get and return the Reconfig value
+		 * @return Reconfig value 
 		 */
-		public int getReeconfig() {
-		return Reeconfig;	
+		public int getReconfig() {
+		return Reconfig;	
 		} 
 }
