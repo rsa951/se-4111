@@ -46,7 +46,7 @@ public class singleton {
 		 */
 		public void setAshconfig(int con2) {
 			assert(con2 % 1 == 0)
-			Ashconfig=con1;
+			Ashconfig=con2;
 			} 
 		
 		/*
