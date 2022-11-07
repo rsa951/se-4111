@@ -20,19 +20,20 @@ public class singleton {
 		return ins;
 	
 }
+
 		/*
-		 * this function is to set an int number to shaconfig
-		 * @param con1 value to set new value
+		 * this function is to set an int number to shaconfig 
+		 * @param con1 value is to set a new value
 		 */
 		public void setShconfig(int con1) {
-			assert(shaconfig % 1 == 0)
+			assert(con1 % 1 == 0)
 			shaconfig=con1;
-			} 	
+			} 
+		
 		/*
-		 * this function is to get an int number of shaconfig
+		 * this function is to get and return the shaconfig value
 		 * @return shaconfig value 
 		 */
-		
 		public int getShconfig() {
 		return shaconfig;	
 		} 	
