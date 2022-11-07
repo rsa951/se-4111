@@ -8,6 +8,7 @@ public class singleton {
 		private singleton() {
 			System.out.print("shahad abdullah");
 			System.out.print("Ashwaq Rajeh");
+			System.out.print("Reema Aldawood");
 			
 		}
 
