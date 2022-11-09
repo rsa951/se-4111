@@ -1,17 +1,30 @@
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class SingletonTest {
+import lll.Sc;
 
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
+class SingletonTest {
+	
+	static Singleton ShahadSn; 
+	
+	@BeforeEach
+	static void setUpBeforeClass()  {
+		ShahadSn = Singleton.getInstance();
+		
 	}
+
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testSetShconfig() {
+		ShahadSn.setShconfig(20);
+		 assertEquals(20,ShahadSn.getShconfig());
 	}
 
+
 }
+
+
