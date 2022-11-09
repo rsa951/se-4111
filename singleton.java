@@ -6,6 +6,7 @@ public class singleton {
 		private static singleton ins; 
 		private int shaconfig; 
 		private int Ashconfig;
+		private int Reconfig;
 		
 		private singleton() {
 			System.out.print("shahad abdullah");
@@ -27,7 +28,7 @@ public class singleton {
 		 * @param con1 value to pass a value into the set function
 		 */
 		public void setShconfig(int con1) {
-			assert(con1 % 1 == 0)
+			assert(con1 % 1 == 0);
 			shaconfig=con1;
 			} 
 		
@@ -45,7 +46,7 @@ public class singleton {
 		 * @param con2 value to pass a value into the set function
 		 */
 		public void setAshconfig(int con2) {
-			assert(con2 % 1 == 0)
+			assert(con2 % 1 == 0);
 			Ashconfig=con2;
 			} 
 		
@@ -61,7 +62,7 @@ public class singleton {
 		 * @param con3 value to pass a value into the set function
 		 */
 		public void setReconfig(int con3) {
-			assert(con3 % 1 == 0)
+			assert(con3 % 1 == 0);
 			Reconfig=con3;
 			} 
 		
