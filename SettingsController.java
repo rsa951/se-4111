@@ -7,35 +7,13 @@ public class SettingsController {
 	 public SettingsController(SettingsModel m, SettingsView v) {
 	  model = m;
 	  view = v;
-	  initView();
 	  initViewSh();
 	  initViewASH();
+	  initViewRE();
+
 	 } 
 	 
-	 public void initView() {
-	  view.getSettingOneTextfield().setText(Integer.toString(model.getConfig1()));
-	  
-	 } 
-	
-	 public void initController() {
-	  view.getSettingOneSaveButton().addActionListener(e -> saveSettingOne());
-	  
-	  view.getSettingOnePrintButton().addActionListener(e -> printToConsole());
-	  
-	 } 
-	 
-	 private void saveSettingOne() {
-	  model.setConfig1(Integer.parseInt(view.getSettingOneTextfield().getText()));
-	  } 
-	 
-	 
-	 private void printToConsole() {
-	  System.out.println(model.getConfig1());
-	 }
-	 
-	 
-	 
-	 //shahad
+	 //  shahad
 	 
 	 public void initViewSh() {
 		  view.getSettingShTextfield().setText(Integer.toString(model.getShconfig()));
@@ -74,11 +52,28 @@ public class SettingsController {
 	 private void printToConsoleASH() {
 		  System.out.println(model.getASHconfig());
 		 }
+	 //Rema
+
+	 public void initViewRE() {
+		  view.getSettingRETextfield().setText(Integer.toString(model.getREconfig()));
+		  
+		 }
+	 
+	 public void initControllerRE() {
+		  view.getSettingRESaveButton().addActionListener(e -> saveSettingOneRE());
+		  
+		  view.getSettingREPrintButton().addActionListener(e -> printToConsoleRE());
+		  
+		 } 
+	 private void saveSettingOneRE() {
+		  model.setREconfig(Integer.parseInt(view.getSettingRETextfield().getText()));
+		  } 
+	 private void printToConsoleRE() {
+		  System.out.println(model.getREconfig());
+		 }
 	 
 	 
 	 
 	
 }
 	 
-	
-}

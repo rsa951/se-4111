@@ -9,15 +9,6 @@ public class SettingsView {
 	
 	 private JFrame frame;
 	 
-	 //Setting One needed View elements
-	 private JLabel settingOneLabel;
-	 
-	 private JTextField settingOneTextfield;
-	 
-	 private JButton settingOneSaveButton;
-	 
-	 private JButton settingOnePrintButton;
-	 
 	 //shahad
     private JLabel settingShLabel;
 	 
@@ -27,7 +18,24 @@ public class SettingsView {
 	 
 	 private JButton settingShPrintButton;
 	 
-	 
+	 //Ashwaq
+	    private JLabel settingASHLabel;
+		 
+		 private JTextField settingASHTextfield;
+		 
+		 private JButton settingASHSaveButton;
+		 
+		 private JButton settingASHPrintButton;
+		 
+		 //Rema
+		    private JLabel settingRELabel;
+			 
+			 private JTextField settingRETextfield;
+			 
+			 private JButton settingRESaveButton;
+			 
+			 private JButton settingREPrintButton;
+			 
 	 
 	 public SettingsView() {
 	 
@@ -38,18 +46,25 @@ public class SettingsView {
 		  frame.setLocationRelativeTo(null);
 		  frame.setVisible(true);  
 		  
-		  // Create UI elements
-		  settingOneLabel = new JLabel("Setting One:");
-		  settingOneTextfield = new JTextField();
-		  settingOneSaveButton = new JButton("Save setting one");
-		  settingOnePrintButton = new JButton("Print to Console!");
-		  	  
+		 
 		  // Create UI elements/shahad
 		  settingShLabel = new JLabel("shahad Setting :");
 		  settingShTextfield = new JTextField();
 		  settingShSaveButton = new JButton("Save shahad setting ");
 		  settingShPrintButton = new JButton("Print to Console!");
 		  	  
+		  // Create UI elements/Ashwaq
+		  settingASHLabel = new JLabel("Ashwaq Setting :");
+		  settingASHTextfield = new JTextField();
+		  settingASHSaveButton = new JButton("Save Ashwaq setting ");
+		  settingASHPrintButton = new JButton("Print to Console!");
+		  // Create UI elements/Rema
+		  settingRELabel = new JLabel("Rema Setting :");
+		  settingRETextfield = new JTextField();
+		  settingRESaveButton = new JButton("Save Rema setting ");
+		  settingREPrintButton = new JButton("Print to Console!");
+		  
+		  
 		  // Add UI element to frame
 		  GroupLayout layout = new GroupLayout(frame.getContentPane());
 		  
@@ -57,16 +72,16 @@ public class SettingsView {
 		  layout.setAutoCreateContainerGaps(true);
 		  
 		  layout.setHorizontalGroup(layout.createSequentialGroup()
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOneLabel).addComponent(settingShLabel))
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOneTextfield).addComponent(settingShTextfield))
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOneSaveButton).addComponent(settingShSaveButton))
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOnePrintButton).addComponent(settingShPrintButton)));
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingShLabel).addComponent(settingASHLabel).addComponent(settingRELabel))
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingShTextfield).addComponent(settingASHTextfield).addComponent(settingRETextfield))
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingShSaveButton).addComponent(settingASHSaveButton).addComponent(settingRESaveButton))
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingShPrintButton).addComponent(settingASHPrintButton).addComponent(settingREPrintButton)));
 		  layout.setVerticalGroup(layout.createSequentialGroup()
 				  
+.addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingShLabel).addComponent(settingShTextfield).addComponent(settingShSaveButton).addComponent(settingShPrintButton))
+.addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingASHLabel).addComponent(settingASHTextfield).addComponent(settingASHSaveButton).addComponent(settingASHPrintButton))
+.addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingRELabel).addComponent(settingRETextfield).addComponent(settingRESaveButton).addComponent(settingREPrintButton)));
 
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingOneLabel).addComponent(settingOneTextfield).addComponent(settingOneSaveButton).addComponent(settingOnePrintButton))
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingShLabel).addComponent(settingShTextfield).addComponent(settingShSaveButton).addComponent(settingShPrintButton)));
-		  
 		  frame.getContentPane().setLayout(layout);
 		  
 		 } 
@@ -78,44 +93,8 @@ public class SettingsView {
 	 public void setFrame(JFrame frame) {
 	  this.frame = frame;
 	 } 
-	 
-	 public JLabel getSettingOneLabel() {
-	  return settingOneLabel;
-	 } 
-	 
-	 public void setSettingOneLabel(JLabel settingOneLabel) {
-	  this.settingOneLabel = settingOneLabel;
-	 } 
-	 
-	 	 
-	 public JTextField getSettingOneTextfield() {
-	  return settingOneTextfield;
-	 } 
-	 
-	 public void setSettingOneTextfield(JTextField settingOneTextfield) {
-	  this.settingOneTextfield = settingOneTextfield;
-	 } 
-	 
-	 
-	 
-	 public JButton getSettingOneSaveButton() {
-	  return settingOneSaveButton;
-	 } 
-	 
-	 public void setSettingOneSaveButton(JButton settingOneSaveButton) {
-	  this.settingOneSaveButton = settingOneSaveButton;
-	 } 
-	 
-	 	 
-	 public JButton getSettingOnePrintButton() {
-	  return settingOnePrintButton;
-	 } 
-	 
-	 public void setPrintButton(JButton print) {
-	  this.settingOnePrintButton = print;
-	 }
-	 
- //shahad
+
+//shahad
 	 public JLabel getSettingShLabel() {
 		  return settingShLabel;
 		 } 
@@ -134,7 +113,7 @@ public class SettingsView {
 	 } 
 
 	 public JButton getSettingShSaveButton() {
-	  return settingOneSaveButton;
+	  return settingShSaveButton;
 	 } 
 	 
 	 public void setSettingShSaveButton(JButton settingShSaveButton) {
@@ -146,6 +125,78 @@ public class SettingsView {
 	  return settingShPrintButton;
 	 }
 	 public void setShPrintButton(JButton print) {
-		  this.settingOnePrintButton = print;
-		 }}
+		  this.settingShPrintButton = print;
+		 }
+
+//Ashwaq
+public JLabel getSettingASHLabel() {
+	  return settingASHLabel;
+	 } 
+
+public void setSettingASHLabel(JLabel settingASHLabel) {
+	  this.settingASHLabel = settingASHLabel;
+	 } 
+
+
+public JTextField getSettingASHTextfield() {
+ return settingASHTextfield;
+} 
+
+public void setSettingASHTextfield(JTextField settingASHTextfield) {
+ this.settingASHTextfield = settingASHTextfield;
+} 
+
+public JButton getSettingASHSaveButton() {
+ return settingASHSaveButton;
+} 
+
+public void setSettingASHSaveButton(JButton settingASHSaveButton) {
+ this.settingASHSaveButton = settingASHSaveButton;
+} 
+
+
+
+public JButton getSettingASHPrintButton() {
+ return settingASHPrintButton;
+}
+public void setASHPrintButton(JButton print) {
+	  this.settingASHPrintButton = print;
+	 }
+
+
+
+	//Rema
+		 public JLabel getSettingRELabel() {
+			  return settingShLabel;
+			 } 
+		 
+		 public void setSettingRELabel(JLabel settingRELabel) {
+			  this.settingRELabel = settingRELabel;
+			 } 
+		 
+		 
+		 public JTextField getSettingRETextfield() {
+		  return settingRETextfield;
+		 } 
+		 
+		 public void setSettingRETextfield(JTextField settingRETextfield) {
+		  this.settingRETextfield = settingRETextfield;
+		 } 
+
+		 public JButton getSettingRESaveButton() {
+		  return settingRESaveButton;
+		 } 
+		 
+		 public void setSettingRESaveButton(JButton settingRESaveButton) {
+			 this.settingRETextfield = settingRETextfield;
+		 } 
+		 
+		 
+		 public JButton getSettingREPrintButton() {
+		  return settingREPrintButton;
+		 }
+		 public void setREPrintButton(JButton print) {
+			  this.settingREPrintButton = print;
+			 }
+}
 	

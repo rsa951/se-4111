@@ -1,5 +1,3 @@
-package aaa;
-
 public class SettingsModel {
 	private static SettingsModel uniqueInstance;
 
@@ -8,9 +6,10 @@ public class SettingsModel {
 		private SettingsModel() {
 		}
 		
-		private int config1;
+	
 		private int shaconfig;
 		private int ASHconfig;
+		private int REconfig;
 		
 		public static SettingsModel getInstance() {
 			if (uniqueInstance == null) {
@@ -21,24 +20,7 @@ public class SettingsModel {
 		
 			return uniqueInstance;
 		}
-		// other useful methods here
-		
-		/* 
-		 * this function to set port number
-		 * @param port number
-		 *
-		 * 
-		 */
-		public void setConfig1(int con) {
-			assert con>0;
-			config1=con;
-		}
-		
-		public int getConfig1() {
-			
-			return config1;
-		}
-		
+	
 	//shahad
 		
 		public void setShconfig(int con) {
@@ -60,5 +42,16 @@ public class SettingsModel {
 		public int getASHconfig() {
 		return ASHconfig;	
 		}
-	}
 
+		//Rema
+
+				public void setREconfig(int con) {
+					assert con>0;
+					REconfig=con;
+					} 
+				
+				public int getREconfig() {
+				return REconfig;	
+				}
+		
+	}
