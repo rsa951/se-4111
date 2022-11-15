@@ -1,3 +1,5 @@
+package aaa;
+
 public class SettingsModel {
 	private static SettingsModel uniqueInstance;
 
@@ -8,11 +10,14 @@ public class SettingsModel {
 		
 		private int config1;
 		private int shaconfig;
+		private int ASHconfig;
 		
 		public static SettingsModel getInstance() {
 			if (uniqueInstance == null) {
 				uniqueInstance = new SettingsModel();
 			}
+			
+		
 		
 			return uniqueInstance;
 		}
@@ -44,4 +49,16 @@ public class SettingsModel {
 		public int getShconfig() {
 		return shaconfig;	
 		}
+	
+//Ashwaq
+
+		public void setASHconfig(int con) {
+			assert con>0;
+			ASHconfig=con;
+			} 
+		
+		public int getASHconfig() {
+		return ASHconfig;	
+		}
 	}
+
