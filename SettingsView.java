@@ -29,7 +29,6 @@ public class SettingsView {
 	 
 	 
 	 
-	 
 	 public SettingsView() {
 	 
 		  frame = new JFrame("Settings");

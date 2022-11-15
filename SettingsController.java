@@ -9,6 +9,7 @@ public class SettingsController {
 	  view = v;
 	  initView();
 	  initViewSh();
+	  initViewASH();
 	 } 
 	 
 	 public void initView() {
@@ -54,7 +55,30 @@ public class SettingsController {
 		  System.out.println(model.getShconfig());
 		 }
 	 
+	 //Ashwaq
 	 
+	 public void initViewASH() {
+		  view.getSettingASHTextfield().setText(Integer.toString(model.getASHconfig()));
+		  
+		 }
+	 
+	 public void initControllerASH() {
+		  view.getSettingASHSaveButton().addActionListener(e -> saveSettingOneASH());
+		  
+		  view.getSettingASHPrintButton().addActionListener(e -> printToConsoleASH());
+		  
+		 } 
+	 private void saveSettingOneASH() {
+		  model.setASHconfig(Integer.parseInt(view.getSettingASHTextfield().getText()));
+		  } 
+	 private void printToConsoleASH() {
+		  System.out.println(model.getASHconfig());
+		 }
+	 
+	 
+	 
+	
+}
 	 
 	
 }
