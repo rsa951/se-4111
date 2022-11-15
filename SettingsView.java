@@ -5,8 +5,8 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 
-	 public class SettingsView { 
-		
+public class SettingsView { 
+	
 	 private JFrame frame;
 	 
 	 //Setting One needed View elements
@@ -17,6 +17,17 @@ import javax.swing.JTextField;
 	 private JButton settingOneSaveButton;
 	 
 	 private JButton settingOnePrintButton;
+	 
+	 //shahad
+    private JLabel settingShLabel;
+	 
+	 private JTextField settingShTextfield;
+	 
+	 private JButton settingShSaveButton;
+	 
+	 private JButton settingShPrintButton;
+	 
+	 
 	 
 	 
 	 public SettingsView() {
@@ -34,6 +45,12 @@ import javax.swing.JTextField;
 		  settingOneSaveButton = new JButton("Save setting one");
 		  settingOnePrintButton = new JButton("Print to Console!");
 		  	  
+		  // Create UI elements/shahad
+		  settingShLabel = new JLabel("shahad Setting :");
+		  settingShTextfield = new JTextField();
+		  settingShSaveButton = new JButton("Save shahad setting ");
+		  settingShPrintButton = new JButton("Print to Console!");
+		  	  
 		  // Add UI element to frame
 		  GroupLayout layout = new GroupLayout(frame.getContentPane());
 		  
@@ -41,15 +58,15 @@ import javax.swing.JTextField;
 		  layout.setAutoCreateContainerGaps(true);
 		  
 		  layout.setHorizontalGroup(layout.createSequentialGroup()
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOneLabel))
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOneTextfield))
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOneSaveButton))
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOnePrintButton)));
-		  
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOneLabel).addComponent(settingShLabel))
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOneTextfield).addComponent(settingShTextfield))
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOneSaveButton).addComponent(settingShSaveButton))
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingOnePrintButton).addComponent(settingShPrintButton)));
 		  layout.setVerticalGroup(layout.createSequentialGroup()
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingOneLabel)
-		    .addComponent(settingOneTextfield).addComponent(settingOneSaveButton).addComponent(settingOnePrintButton)));
-		  
+				  
+
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingOneLabel).addComponent(settingOneTextfield).addComponent(settingOneSaveButton).addComponent(settingOnePrintButton))
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingShLabel).addComponent(settingShTextfield).addComponent(settingShSaveButton).addComponent(settingShPrintButton)));
 		  
 		  frame.getContentPane().setLayout(layout);
 		  
@@ -97,6 +114,39 @@ import javax.swing.JTextField;
 	 
 	 public void setPrintButton(JButton print) {
 	  this.settingOnePrintButton = print;
+	 }
+	 
+ //shahad
+	 public JLabel getSettingShLabel() {
+		  return settingShLabel;
+		 } 
+	 
+	 public void setSettingShLabel(JLabel settingShLabel) {
+		  this.settingShLabel = settingShLabel;
+		 } 
+	 
+	 
+	 public JTextField getSettingShTextfield() {
+	  return settingShTextfield;
 	 } 
 	 
-}
+	 public void setSettingShTextfield(JTextField settingShTextfield) {
+	  this.settingShTextfield = settingShTextfield;
+	 } 
+
+	 public JButton getSettingShSaveButton() {
+	  return settingOneSaveButton;
+	 } 
+	 
+	 public void setSettingShSaveButton(JButton settingShSaveButton) {
+	  this.settingShSaveButton = settingShSaveButton;
+	 } 
+	 
+	 
+	 public JButton getSettingShPrintButton() {
+	  return settingShPrintButton;
+	 }
+	 public void setShPrintButton(JButton print) {
+		  this.settingOnePrintButton = print;
+		 }}
+	
